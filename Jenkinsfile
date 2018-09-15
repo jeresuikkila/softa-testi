@@ -14,5 +14,11 @@ pipeline {
         sh 'python3 -m pytest --junitxml results.xml test.py'
       }
     }
+
+    post {
+        always {
+            junit 'results.xml'
+        }
+    }
   }
 }
