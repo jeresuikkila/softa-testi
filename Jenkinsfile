@@ -1,6 +1,13 @@
 pipeline {
   agent any
   stages {
+    stage('Install requirements') {
+      steps {
+        echo 'Installing requirements'
+        sh 'pip install -U -r requirements.txt'
+      }
+    }
+
     stage('Test') {
       steps {
         echo 'Running tests'
