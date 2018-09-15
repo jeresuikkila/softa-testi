@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Running tests'
-        sh 'python -m unittest test'
+        sh 'python3 -m unittest test'
       }
     }
   }
