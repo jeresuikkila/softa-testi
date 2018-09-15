@@ -1,7 +1,7 @@
 from pprint import pprint
 
 def hello():
-    return 'Hello Wolrd!'
+    return 'Hello World!'
 
 def puzzle(rows=5, columns=5):
     puzzle = [[0 for i in range(columns)] for j in range(rows)]
