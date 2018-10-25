@@ -3,6 +3,9 @@ from pprint import pprint
 def hello():
     return 'Hello World!'
 
+def bye():
+    return 'Bye now!'
+
 def puzzle(rows=5, columns=5):
     puzzle = [[0 for i in range(columns)] for j in range(rows)]
     return puzzle
